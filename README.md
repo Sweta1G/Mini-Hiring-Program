@@ -21,7 +21,7 @@ No sign-up or registration is required. Use one of the following test accounts t
 
 1. Clone the repository and install dependencies:
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/Sweta1G/Mini-Hiring-Program
    cd mini-hiring-program
    npm install
    ```
