@@ -8,7 +8,7 @@ import './index.css';
 import { initializeDatabase, seedDatabase } from './lib/db';
 
 async function enableMocksAndRender() {
-  if (import.meta.env.DEV) {
+  // if (import.meta.env.DEV) {
     // Prompt for HR name on first load (for demo/dev only)
     let hrName = localStorage.getItem('hrName');
     if (!hrName) {
@@ -18,7 +18,7 @@ async function enableMocksAndRender() {
     await seedDatabase(hrName);
     const { worker } = await import('./lib/api');
     await worker.start();
-  }
+  // }
   createRoot(document.getElementById('root')!).render(
     <StrictMode>
       <App />
