@@ -53,6 +53,8 @@ No sign-up or registration is required. Use one of the following test accounts t
 - No sign-up or registration is available. Use the provided credentials.
 - For assessment submission, follow the instructions in your test prompt.
 - Candidate profile timeline shows the name of the HR who performed each activity, so you can track who did what operations.
+- **Important:** The deployed app uses browser-only storage (IndexedDB + Mock Service Worker). All data will reset on page refresh, browser change, or redeploy. This is expected for demo/submission purposes. No real backend is used.
+- If you see an empty UI (no candidates, jobs, or assessments) after opening the deployed link, refresh the page or clear your browser cache. The app should seed demo data on first load. If it remains empty, this is a limitation of the frontend-only demo and how browser storage works in production deployments.
 
 ---
 
